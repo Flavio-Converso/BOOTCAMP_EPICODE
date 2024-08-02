@@ -1,0 +1,69 @@
+<div class="container mt-5">
+  <form [formGroup]="registrazioneForm" (ngSubmit)="invia()">
+    <div class="form-group">
+      <input [class.is-invalid]="isTouchedInvalid('nome')" type="text" formControlName="nome" class="form-control"
+        placeholder="Nome">
+    </div>
+    <div class="form-group">
+      <input [class.is-invalid]="isTouchedInvalid('cognome')" type="text" formControlName="cognome" class="form-control"
+        placeholder="Cognome">
+    </div>
+    <div formGroupName="authData" class="form-row row">
+      <div class="form-group col-6">
+        <input [class.is-invalid]="isTouchedInvalid('authData.email')" type="email" formControlName="email"
+          class="form-control" placeholder="Email">
+        <span
+          *ngIf="isTouchedInvalid('authData.email') && registrazioneForm.get('authData.email')?.errors?.['isValidEmail']"
+          class="text-danger">
+          {{ registrazioneForm.get('authData.email')?.errors?.['isValidEmail'] }}
+        </span>
+      </div>
+      <div class="form-group col-6">
+        <input [class.is-invalid]="isTouchedInvalid('authData.confermaEmail')" type="email"
+          formControlName="confermaEmail" class="form-control" placeholder="Conferma email">
+      </div>
+      <div class="form-group col-6 ">
+        <input [class.is-invalid]="isTouchedInvalid('authData.password')" type="password" formControlName="password"
+          class="form-control" placeholder="Password">
+        <span
+          *ngIf="isTouchedInvalid('authData.password') && registrazioneForm.get('authData.password')?.errors?.['isValidPassword']"
+          class="text-danger">
+          {{ registrazioneForm.get('authData.password')?.errors?.['isValidPassword'] }}
+        </span>
+      </div>
+      <div class="form-group col-6">
+        <input [class.is-invalid]="isTouchedInvalid('authData.confermaPassword')" type="password"
+          formControlName="confermaPassword" class="form-control" placeholder="Conferma password">
+      </div>
+
+    </div>
+    <div class="form-row row">
+      <div class="form-group col-12">
+        <select [class.is-invalid]="isTouchedInvalid('genere')" formControlName="genere" class="form-select">
+          <option value="selectPlaceholder" disabled selected>Scegli il tuo genere</option>
+          <option value="uomo">Uomo</option>
+          <option value="donna">Donna</option>
+          <option value="altro">Altro</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <input type="file" formControlName="immagine" class="form-control" placeholder="Immagine di profilo">
+    </div>
+    <div class="form-group">
+      <textarea [class.is-invalid]="isTouchedInvalid('biografia')" formControlName="biografia" class="form-control"
+        placeholder="Parlaci di te"></textarea>
+      <span *ngIf="isTouchedInvalid('biografia') && registrazioneForm.get('biografia')?.errors" class="text-danger">
+        La biografia deve contenere tra 50 e 100 caratteri.
+      </span>
+    </div>
+    <div class="form-group">
+      <input [class.is-invalid]="isTouchedInvalid('username')" type="text" formControlName="username"
+        class="form-control" placeholder="Username">
+    </div>
+    <button type="submit" class="btn btn-success">Registrati</button>
+    <span *ngIf="formSubmitted && registrazioneForm.invalid" class="text-danger d-block">
+      Per favore, compila tutti i campi richiesti correttamente.
+    </span>
+  </form>
+</div>

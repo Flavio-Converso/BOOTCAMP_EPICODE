@@ -1,3 +1,0 @@
-﻿
-aggiungere localstorage o session per il carrello
-

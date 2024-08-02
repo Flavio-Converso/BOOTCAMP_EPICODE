@@ -1,0 +1,115 @@
+html,
+body,
+main,
+section {
+    height: 100%;
+}
+
+header {
+    background-color: #FFC017;
+    padding-bottom: 25px;
+    border-bottom: solid 1px #191919;
+    font-family: "Spectral", serif;
+}
+
+#navbar {
+    padding: 20px;
+    border-bottom: solid 1px #191919;
+}
+
+header div nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottoni {
+    display: flex;
+    align-items: center;
+
+}
+
+#signIn {
+    margin: 10px;
+
+}
+
+#signIn,
+.btnGrey {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.btnGrey {
+    color: white;
+    background-color: #191919;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#giallo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 24px;
+    margin-top: 30px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 4em;
+    margin: 35px 0;
+    margin-bottom: 25px;
+
+}
+
+#giallo2 p {
+    margin: 20px auto;
+    font-size: 1.5em;
+}
+
+#giallo2 button {
+    margin: 35px 0;
+    margin-bottom: 40;
+    width: 180px;
+    font-size: 1em;
+}
+
+/*FINE HEADER GIALLO*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+}
+
+h5 img {
+    margin-right: 0.7em;
+}
+
+ol {
+    list-style-type: none;
+}
+
+.imgTonda {
+    width: 25px;
+    height: 26px;
+    border-radius: 99em;
+    margin: 0 0.5em;
+}
+
+.autore {
+    display: flex;
+    align-items: center;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}

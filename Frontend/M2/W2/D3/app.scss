@@ -1,0 +1,55 @@
+@import "./assets/partials/reset";
+@import "./assets/partials/colori";
+@import "./assets/partials/animazioni";
+@import "./assets/partials/font";
+@import "./assets/partials/bottoni";
+@import "./assets/partials/spaziature";
+@import "./assets/partials/mixin";
+
+#logo {
+  border-radius: 20px;
+  width: 7%;
+}
+.bg-hero {
+  background-color: $bg-hero;
+}
+
+.flex {
+  @include grid;
+}
+nav ul li {
+  :hover {
+    color: aqua;
+  }
+}
+nav a {
+  color: $colore-testo;
+}
+
+.floating {
+  @include floating;
+}
+
+h1 {
+  @include title-big;
+}
+h3 {
+  width: 53%;
+}
+header {
+  color: $colore-testo;
+}
+button {
+  width: 100%;
+  height: 50px;
+  &:active {
+    border: 3px solid green;
+  }
+}
+#img-header {
+  width: 40%;
+}
+
+#grid {
+  flex-wrap: wrap;
+}

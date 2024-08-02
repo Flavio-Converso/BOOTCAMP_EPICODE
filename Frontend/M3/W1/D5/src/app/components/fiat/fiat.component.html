@@ -1,0 +1,32 @@
+<div class="container vh-100">
+  <div class=" col-12 d-flex justify-content-center">
+    <ul class=" d-flex">
+      <li class="list-unstyled mx-5">
+        <img class="img-fluid" src={{brandLogo}} alt="">
+      </li>
+    </ul>
+  </div>
+  <div class="row mt-4 d-flex justify-content-center">
+    <p class="fw-bold fs-4 text-center">
+      Fiat (Fabbrica Italiana Automobili Torino) è un'azienda automobilistica italiana fondata nel 1899. Rinomata per la
+      produzione di auto compatte e city car, Fiat ha contribuito significativamente alla storia dell'automobile con
+      modelli iconici come la Fiat 500. La gamma di Fiat è conosciuta per il design accattivante, l'efficienza nei
+      consumi e la praticità, rendendo le sue vetture ideali per la guida urbana.</p>
+    <div class="col-6" *ngFor="let auto of autos">
+      <div class="card h-100">
+        <img src={{auto.modelImage}} class="card-img-top img-fluid h-100" alt="imgAuto">
+        <div class="card-body" [ngClass]="{
+        'bg-white': auto.available,
+        'bg-dark text-white': !auto.available
+    }">
+          <h5 class="card-title text-center fs-1">Modello: {{auto.model}}</h5>
+          <p class="card-text bg-primary text-center fs-4">Anno di uscita: {{auto.year}}</p>
+          <p class="card-text bg-primary text-center fs-4">Prezzo: {{auto.price}} $</p>
+          <p class="card-text bg-success  text-center fs-3" *ngIf="auto.available">Disponibile</p>
+          <p class="card-text bg-danger  text-center fs-3" *ngIf="!auto.available">Non disponibile
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

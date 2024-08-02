@@ -1,0 +1,19 @@
+<h2>Preferiti</h2>
+<table class="table">
+  <tr>
+    <th>ID</th>
+    <th>Prodotto</th>
+    <th>Brand</th>
+    <th>Categoria</th>
+    <th>Quantità</th>
+    <th>Prezzo</th>
+  </tr>
+  <tr *ngFor="let prodotto of preferiti">
+    <td>{{ prodotto.id }}</td>
+    <td>{{ prodotto.title }}</td>
+    <td>{{ prodotto.brand }}</td>
+    <td>{{ prodotto.category }}</td>
+    <td>x{{ prodotto.stock }}</td>
+    <td>{{ prodotto.price }}$</td>
+  </tr>
+</table>

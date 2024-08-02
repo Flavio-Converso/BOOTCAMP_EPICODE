@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <meta name="description"
+        content="Primi passi operativi per creare un modello di pagina HTML per un post. Scopri come iniziare in modo facile">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <a href="https://epicode.com/it/" title="link al sito" target="_blank"> <img src="./assets/img/logo.svg"
+                    alt="logo Epicode"></a>
+        </figure>
+        <h1 style="color:rgb(11, 228, 192)">Epicode - Il blog dei developers</h1>
+        <nav>
+            <ul style="list-style: none; font-size: 1.3em;padding-left:10px">
+                <li><a href="#" title="tasto per la home" style="text-decoration: none;">Home</a></li>
+                <li><a href="#" title="tasto per gli articoli" style="text-decoration: none;">Articoli</a></li>
+                <li><a href="#" title="tasto per nostri contatti" style="text-decoration: none;">Lavora con noi</a></li>
+            </ul><br>
+        </nav>
+    </header>
+    <!--                          fine header       INIZIO MAIN-->
+    <main>
+        <article>
+            <div>
+                <h2 style="margin-bottom:0px;">Come creare un template per i post</h2>
+                <p style="margin-top: 4px;">
+                <address><strong>di Mario Rossi</strong></address><i>pubblicato il 25-10-2020</i> </p><br>
+            </div>
+            <h3 style="margin-bottom:0px;">Iniziamo:</h3>
+            <p style="margin-top: 4px;font-size: 1.1em;">La prima cosa da fare è suddividere in blocchi logici la
+                pagina, identificando le parti comuni da applicare a tutte le pagine</p>
+            <p style="font-size: 1.1em">Le varie aree saranno quindi suddivise in:</p>
+            <ul id="unordered_list1" style="font-size: 1.1em"> <!--                        prima tab-->
+                <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code>
+                </li>
+                <li>Contenuti centrali variabili del tag <code>&lt;main&gt; </code>(corpo principale)
+                </li>
+                <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code>
+                </li>
+            </ul>
+
+                     <!--                        seconda tab-->
+            <h3>Formattazione del codice</h3>
+            <p style="font-size: 1.1em">Il testo dell'articolo dovrà essere formattato per identificare tutte le parti
+                da selezionare con i <abbr title="Cascading Style Sheets"> CSS </abbr>
+                Perciò i passi saranno:</p>
+            <ol id="lista_ordinata1" style="font-size: 1.1em">
+                <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato
+                </li>
+                <li>Scrivere l'<abbr title="HyperText Markup Language"> HTML </abbr> dai tag esterni a quelli interni e
+                    dall'alto verso il basso
+                </li>
+                <li>Applicare gli stili CSS
+                </li>
+            </ol>
+            <p style="font-size: 1.1em">L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la
+                diffusione pressoché totale.</p>
+        </article>
+        <!--          TABELLA DATI CSS-->
+        <table style="font-size: 1.2em">
+            <caption><b>Diffusione dei CSS</b></caption>
+            <thead>
+                <tr>
+                    <th>Anno&nbsp;&nbsp;&nbsp;</th>
+                    <th>% di utilizzo&nbsp;&nbsp;&nbsp;</th>
+                    <th>Supporto browsers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><samp>2000</samp></td>
+                    <td><samp>20%</samp></td></samp>
+                    <td><samp>17%</samp></td>
+                </tr>
+                <tr>
+                    <td><samp>2002</samp></td>
+                    <td><samp>35%</samp></td>
+                    <td><samp>22%</samp></td>
+                </tr>
+                <tr>
+                    <td><samp>2004</samp></td>
+                    <td><samp>45%</samp></td>
+                    <td><samp>42%</samp></td>
+                </tr>
+                <tr>
+                    <td><samp>2008</samp></td>
+                    <td><samp>80%</samp></td>
+                    <td><samp>51%</samp></td>
+                </tr>
+                <tr>
+                    <td><samp>2012</samp></td>
+                    <td><samp>100%</samp></td>
+                    <td><samp>76%</samp></td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <p style="font-size: 1.1em;">
+                Un test di validazione potrà essere fatto tramite il
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="link per il tool esterno" target="_blank">
+                    tool online </a>
+                dedicato allo scopo. Una volta
+                ottimizzato il tutto,avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come
+                loro:
+            </p>
+            <div style="text-align:center"><iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/5rlZ9p6z270?si=M-Z_0BddfnA67_TP" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </div>
+
+    </main>
+    <!--                   fine main-->
+    <br>
+    <section>
+        <div id="newsletter">
+            <p style="font-size: 1.1em;">Vuoi rimanre aggiornato su altre novità del blog? Iscriviti alla nostra
+                <b>newsletter</b>:
+            </p>
+            <form method="#" action="#">
+                <div>
+                    <label for="email">Inserisci la tua email
+                    </label>
+                    <input type="email" name="email" placeholder="es@esempio.com">
+                </div>
+                <div>
+                    <label for="iscriviti"></label>
+                    <input type="submit" value="Iscriviti" name="iscriviti">
+                </div>
+            </form>
+        </div><br><br>
+    </section>
+    <!--              tabella CORRELATI-->
+    <aside>
+        <ul style="list-style: none;padding-left: 0;">Articoli Correlati
+            <li>
+                <table>
+                    <tr>
+                        <th><a href="https://www.edatlas.it/scarica/SIA_3/Capitolo11/MaterialiOnLine/5ValidazioneHTML.pdf"
+                                style="text-decoration: none;" title="link all'articolo" target="_blank">Validare il
+                                codice HTML</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Categoria:develop</td>
+                    </tr>
+                    <tr>
+                        <td>Data:18-9-2020</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table>
+                    <tr>
+                        <th><a href="https://www.html.it/articoli/gestione-degli-errori/" style="text-decoration: none;"
+                                title="link all'articolo" target="_blank">Correggere la sintassi</a></th>
+                    </tr>
+                    <tr>
+                        <td>Categoria:develop</td>
+                    </tr>
+                    <tr>
+                        <td>Data:16-9-2020</td>
+                    </tr>
+                </table>
+            </li>
+            <li>
+                <table>
+                    <tr>
+                        <th><a href="https://www.html.it/articoli/il-giusto-peso-delle-pagine/"
+                                style="text-decoration: none;" title="link all'articolo" target="_blank">Meno kb nella
+                                pagina</a></th>
+                    </tr>
+                    <tr>
+                        <td>Categoria:ottimizzazione</td>
+                    </tr>
+                    <tr>
+                        <td>Data:30-9-2020</td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </aside><br>
+    <!--                 FINE CORRELATI INIZIO FOOTER-->
+    <footer id="footer">Blog Epicode &copy;2023
+        <p style="margin-top:0; margin-bottom:0">Testata online di <i>Mario Rossi</i>, registrata con prot.
+            <b>n.213/2028 </b>- via Luigi Einaudi 2 - Milano <b>P.IVA 00112233.</b>
+        </p>
+        <a href="mail.to:info@epicode.school" title="mandaci una mail">info@epicode.school</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<div class="container vh-100">
+  <div class=" col-12 d-flex justify-content-center">
+    <ul class="d-flex list-unstyled">
+      <li class=" mx-5">
+        <img class="img-fluid" src={{brandLogo}} alt="">
+      </li>
+    </ul>
+  </div>
+  <div class="row mt-4 d-flex justify-content-center">
+    <p class="fw-bold fs-4 text-center">
+      Audi è un produttore automobilistico tedesco noto per i suoi veicoli dilusso e le tecnologie
+      all'avanguardia. Fondata nel 1909, Audi è diventata sinonimo di design elegante, prestazioni elevate
+      e innovazioni tecniche. I loro modelli, come l'Audi A4 e l'Audi Q7, sono apprezzati per il comfort,
+      la qualità costruttiva e le avanzate funzionalità di sicurezza e assistenza alla guida.</p>
+    <div class="col-6" *ngFor="let auto of autos">
+      <div class="card h-100">
+        <img src={{auto.modelImage}} class="card-img-top img-fluid h-100" alt="imgAuto">
+        <div class="card-body" [ngClass]="{
+        'bg-white': auto.available,
+        'bg-dark text-white': !auto.available
+    }">
+          <h5 class="card-title text-center fs-1">Modello: {{auto.model}}</h5>
+          <p class="card-text bg-primary text-center fs-4">Anno di uscita: {{auto.year}}</p>
+          <p class="card-text bg-primary text-center fs-4">Prezzo: {{auto.price}} $</p>
+          <p class="card-text bg-success  text-center fs-3" *ngIf="auto.available">Disponibile</p>
+          <p class="card-text bg-danger  text-center fs-3" *ngIf="!auto.available">Non disponibile
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

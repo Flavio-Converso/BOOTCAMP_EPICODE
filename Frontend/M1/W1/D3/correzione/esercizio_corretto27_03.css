@@ -1,0 +1,64 @@
+header{
+    text-align: center;}
+#titolo{
+    font-size: 1em;
+    border-top: 3px solid #FFD877;
+    font-weight: normal;
+    color: #107777;
+    background-color: #FDFBF1;
+    height:55px;
+    line-height: 55px;}
+#contenitore{
+    text-align:center;
+    margin-top:30px;
+    padding-left: 25%;
+    padding-right: 25%;}
+    h1{
+        font-family: "Amatic SC", sans-serif;
+    }
+main h2{
+    font-weight: normal;
+    font-family: "Amatic SC", sans-serif;
+    font-size:1.3em;
+    margin-top:40px;}
+#focaccia{
+    border-radius: 25px;
+    margin-bottom:20px;
+    box-shadow: 6px 4px 10px #d6d5d5;
+    width: 80%;}
+#figcapt{
+    font-size:1.1em;
+    color:#8b8a8a;
+    margin-bottom:50px;}
+#feature_link{
+    text-align: left;
+    border-left: 2px solid #FFD877;
+    padding-left:25px;}
+aside p{
+    color:#BF6031;
+    font-size:20px}
+.link{    /* link - anche footer*/
+    color:#107777;}
+    a :hover{
+        color:#07d3d3;}
+.paragrafi_aside{
+    margin-top: 0;
+    margin-bottom: 0;}
+#contenitore2{
+    text-align: left;
+    margin-top: 50px;
+    font-family: "Amatic SC", sans-serif;}
+.ingr_meth{            /*linea blu */
+border-bottom: 2px solid #C6F3F2;
+padding-bottom: 17px;
+font-size: 25px;}
+.intest_lista{
+    font-size: 21px;}
+li{
+    padding:7px;
+    font-size: 18px;}
+#ultimo_paragrafo{
+    font-size:18px;
+    padding-left:33px}
+footer{
+    text-align: left;}

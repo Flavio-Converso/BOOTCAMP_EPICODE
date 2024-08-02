@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.css"> <!--font awesome-->
+  <link rel="stylesheet" href="./assets/css/reset.css"> <!-- stylesheet reset-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--FONT-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"><!--FINE FONT-->
+  <link rel="stylesheet" href="./style.css"> <!--stylesheet mio-->
+  <meta name="description" content="Presentazione EPICODE"> <!--completare-->
+  <title>Presentazione EPICODE</title>
+</head>
+
+<body>
+  <header>
+    <div class="blocco"><!--INIZIO PRIMO BLOCCO CON LOGO-->
+      <img id=logo src="./assets/img/logo.svg" alt="logo epicode"> <!--LOGO-->
+      <h1>EPICODE - IL BLOG DEI DEVELOPERS</h1>
+      <nav>
+        <ul> <!--menu navigazione-->
+          <li class="menu">&rarr;HOME&larr;</li>
+          <li class="menu">&rarr;ARTICOLI&larr;</li>
+          <li class="menu">&rarr;LAVORA CON NOI&larr; </li>
+        </ul>
+      </nav>
+    </div><!--FINE PRIMO BLOCCO-->
+  </header>
+  <main> <!--INIZIO MAIN E SECONDO BLOCCO-->
+    <div class="blocco bordo">
+      <article>
+        <h2>Come creare un <br>template per i post</h2> <!--TITOLO ARTICOLO-->
+        <p id="autore">
+          <i class="fas fa-pen-square"></i>&nbsp;di Mario Rossi - <i class="fas fa-clock"></i>&nbsp;pubblicato il <date>
+            25-10-2020
+          </date>
+        </p>
+        <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le<!--SCRITTA VIOLA 1/3-->
+          <span class="viola">parti
+            comuni</span>
+          da applicare a tutte le pagine<br><br>
+        </p>
+        <p>Le varie aree saranno quindi suddivise in:</p>
+        <ul class="lista"></ul>
+        <li class="lista">Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
+        <li class="lista">Contenuti centrali variabili del tag <code>&lt;main&gt;</code>(corpo principale)</li>
+        <li class="lista">Contenuti di fine pagina comuni, <br>da inserire nel tag <code>&lt;footer&gt;</code></li>
+        </ul><br>
+        <h3>Formattazione del codice</h3>
+        <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <span
+            class="viola">selezionare con i css</span>
+          Perciò i passi saranno:
+        </p>
+        <ol>
+          <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
+          <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+          <li>Applicare gli stili CSS</li>
+        </ol>
+        <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
+        <table> <!--tabella-->
+          <caption>Diffusione dei CSS</caption>
+          <thead>
+            <tr>
+              <th>Anno</th>
+              <th>% di utilizzo</th>
+              <th>Supporto browsers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2000</td>
+              <td>20%</td>
+              <td>17%</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>35%</td>
+              <td>22%</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td>45%</td>
+              <td>42%</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>80%</td>
+              <td>51%</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>100%</td>
+              <td>76%</td>
+            </tr>
+          </tbody>
+        </table>
+        <p id="pre_video">Un test di validazione potrà essere fatto tramite il <a class="piulink" href="#" alt="">tool
+            online</a>
+          dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obbiettivo ed essere stati dei
+          veri developers come loro:
+        </p>
+        <video src="./assets/img/focaccia.mp4" controls poster="./assets/img/maxresdefault.jpg"
+          type="video epicode"></video>
+      </article>
+      <aside>
+        <div class="box_grigio">
+          <h3>Novità</h3>
+          <p>Vuoi rimanere aggiornato su altre
+            novità del blog? Iscriviti alla nostra newsletter:
+          </p>
+          <input id="input1" type="email" placeholder="inserisci la tua email">
+          <input id="input2"type="sumbit" value="ISCRIVITI!">
+        </div>
+      </aside>
+    </div><!--FINE SECONDO BLOCCO-->
+  </main>
+</body>
+
+</html>

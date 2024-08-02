@@ -1,0 +1,174 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|d:\\epicode\\5mesebe\\esercizi\\primasettimana\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|d:\\epicode\\5mesebe\\esercizi\\primasettimana\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|d:\\epicode\\5mesebe\\esercizi\\primasettimana\\service\\spedizioniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|solutionrelative:service\\spedizioniservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|d:\\epicode\\5mesebe\\esercizi\\primasettimana\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|solutionrelative:service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|d:\\epicode\\5mesebe\\esercizi\\primasettimana\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|d:\\epicode\\5mesebe\\esercizi\\primasettimana\\service\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|solutionrelative:service\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|d:\\epicode\\5mesebe\\esercizi\\primasettimana\\service\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|solutionrelative:service\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|d:\\epicode\\5mesebe\\esercizi\\primasettimana\\service\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B76CBF5-5530-42C0-A83F-8AADA31AF46C}|PROGETTO-S1.csproj|solutionrelative:service\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAcwGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:37:42.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SpedizioniService.cs",
+              "DocumentMoniker": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Service\\SpedizioniService.cs",
+              "RelativeDocumentMoniker": "Service\\SpedizioniService.cs",
+              "ToolTip": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Service\\SpedizioniService.cs",
+              "RelativeToolTip": "Service\\SpedizioniService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T13:43:46.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T13:25:19.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAcwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-31T12:51:20.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Service\\IAdminService.cs",
+              "RelativeDocumentMoniker": "Service\\IAdminService.cs",
+              "ToolTip": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Service\\IAdminService.cs",
+              "RelativeToolTip": "Service\\IAdminService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:23:12.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Service\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Service\\IAuthService.cs",
+              "ToolTip": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Service\\IAuthService.cs",
+              "RelativeToolTip": "Service\\IAuthService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:21:21.771Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "Service\\AuthService.cs",
+              "ToolTip": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Service\\AuthService.cs",
+              "RelativeToolTip": "Service\\AuthService.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAwwBwAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:21:20.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Service\\AdminService.cs",
+              "RelativeDocumentMoniker": "Service\\AdminService.cs",
+              "ToolTip": "D:\\EPICODE\\5meseBE\\esercizi\\primaSettimana\\Service\\AdminService.cs",
+              "RelativeToolTip": "Service\\AdminService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T14:21:16.197Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+.grey-personal {
+    color: #6C757D !important;
+}
+
+.red-personal {
+    color: #E50914 !important;
+}
+
+.red-hover-personal {
+    color: #E50914 !important;
+    opacity: 1;
+    transition: filter ease;
+    filter: brightness(0.8);
+}
+
+.red-hover-personal:hover {
+    color: #E50914 !important;
+    opacity: 1 !important;
+    filter: brightness(1.2);
+}
+
+.hover-i:hover {
+    color: #E50914 !important;
+}
+
+.fxs-personal {
+    font-size: 12px !important;
+}
+
+.fsm-personal {
+    font-size: 15px !important;
+}
+
+.bg-personal {
+    background-color: #141414 !important;
+}
+
+.bg-personal2 .text-secondary {
+    transition: filter ease;
+    filter: brightness(0.8);
+    opacity: 0.8;
+}
+
+.bg-personal2:hover .text-secondary {
+    filter: brightness(1.2);
+    opacity: 1;
+}
+
+i:hover {
+    cursor: pointer !important;
+}
+
+a:hover {
+    color: white !important;
+    cursor: pointer !important;
+}
+
+/*NAVBAR*/
+#netflix_logo {
+    width: 150px !important;
+}
+
+#netflix_logo2 {
+    width: 200px !important;
+}
+
+#avatarpng {
+    width: 28px !important;
+}
+
+.navbarFont {
+    font-size: 18px !important;
+}
+
+.dropdown-item {
+    text-align: center !important;
+}
+
+.dropdown-item:hover {
+    background-color: #141414 !important;
+
+}
+
+.dropdown-menu {
+    min-width: 115px !important;
+}
+
+.btn.dropdown-toggle:focus,
+.btn.dropdown-toggle:focus-visible {
+    border-color: transparent !important;
+}
+
+.navbar-toggler {
+    background-color: #BE0B14 !important;
+    color: #141414 !important
+}
+
+/*FINE NAVBAR*/
+#genres {
+    border-color: white !important;
+    border-radius: 0 !important;
+    color: #E50914 !important;
+    opacity: 0.8;
+}
+
+#genres:hover {
+    opacity: 1;
+}
+
+#button-service:hover {
+    background-color: #BE0B14 !important;
+    color: white !important;
+
+}
+
+
+/*ANIMAZIONI*/
+.scale {
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+.scale:hover {
+    transform: scale(1.1) !important;
+    filter: brightness(120%) !important;
+    position: relative !important;
+    z-index: 3 !important;
+}
+
+.row-opacity:hover .highlight:not(:hover) {
+    filter: brightness(20%) !important;
+    opacity: 0.6 !important;
+}
+
+.carousel-item:hover .badge-pos2 {
+    filter: brightness(20%) !important;
+    opacity: 0.6;
+}
+
+.badge-pos {
+    top: 15px;
+    right: 15px;
+    background-color: #BE0B14 !important;
+    color: white !important;
+    font-size: 1.2em;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.badge-pos2 {
+    bottom: 10px;
+    left: 10px;
+    background-color: #BE0B14 !important;
+    color: white !important;
+}
+
+
+
+/**/
+/**/
+/* tentativo fix tasti carosello*/
+@media screen and (min-width: 993px) {
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 5% !important;
+        opacity: 1 !important;
+    }
+}
+
+/*
+PAGINA
+PROFILO
+*/
+.avatar-profile {
+    max-width: 150px;
+}
+
+.bg-grey-personal {
+    background-color: rgba(80, 80, 80, 0.459);
+}
+
+.bg-button-personal {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.8;
+    color: white;
+}
+
+.bg-button-personal:hover {
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+    color: white;
+}
+
+/*checkbox*/
+.custom-checkbox .styled {
+    appearance: none;
+    background-color: #141414;
+    min-width: 2em;
+    min-height: 2em;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+}
+
+.custom-checkbox .styled:checked::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    left: 50%;
+    top: 43%;
+    transform: translate(-50%, -50%) rotate(41deg);
+}
+
+
+
+#borderfix {
+    border-color: white !important;
+    border-radius: 0 !important;
+    color: white !important;
+}
+
+/*PAGINA SETTINGS*/
+.bg-settings {
+    background-color: #ebebeb;
+}
+
+.text-personal-info {
+    color: rgb(24, 150, 253);
+    cursor: pointer;
+}
+
+#avatarpng2 {
+    width: 35px !important;
+}

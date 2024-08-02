@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Benvenuto su Shoe Shop!</h1>
+        <p class="lead">Il tuo negozio online per le migliori calzature.</p>
+        <hr class="my-4">
+        <p>Esplora la nostra vasta collezione di scarpe di alta qualità. Trova il paio perfetto per ogni occasione.</p>
+        <a class="btn btn-primary btn-lg mb-5 personalbtn" asp-area="" asp-controller="Home" asp-action="Articoli" role="button">Scopri i nostri Articoli</a>
+    </div>
+    <div class="jumbotron2">
+        <div class="row mt-5 pt-5 px-4">
+            <div class="col-md-4">
+                <h2>Qualità</h2>
+                <p>Offriamo solo le migliori marche e materiali per garantire che ogni paio di scarpe duri nel tempo.</p>
+                <a class="btn btn-secondary btn-secondary-gradient">Scopri di più »</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Convenienza</h2>
+                <p>Prezzi competitivi e offerte speciali su una vasta gamma di prodotti. Non perdere l'occasione di risparmiare!</p>
+                <a class="btn btn-secondary btn-secondary-gradient">Scopri di più »</a>
+            </div>
+            <div class="col-md-4">
+                <h2>Servizio Clienti</h2>
+                <p>Siamo qui per aiutarti! Contatta il nostro servizio clienti per qualsiasi domanda o necessità.</p>
+                <a class="btn btn-secondary btn-secondary-gradient">Contattaci »</a>
+            </div>
+        </div>
+        <div class="mt-5 text-center pb-5">
+            <h2>Ultimi Arrivi</h2>
+            <p>Scopri le novità appena arrivate nel nostro negozio.</p>
+            <a class="btn btn-success btn-success-gradient" asp-area="" asp-controller="Home" asp-action="Articoli">Guarda gli ultimi arrivi</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,185 @@
+body {
+    padding: 35px;
+    line-height: 1.5;
+    background-image: url(/assets/img/sfondo.png);
+    background-position: center center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    font-style: normal;
+    text-align: left;
+}
+
+header {
+    margin-top: 30px;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    margin-bottom: 20px;
+}
+
+header figcaption {
+    padding: 30px
+}
+
+/*FINE PRIMO BLOCCO*/
+
+#contenitore_main {
+    background-color: white;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0);
+    padding: 25px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+}
+
+#autore {
+    color: grey;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+    padding: 15px;
+
+}
+
+.viola {
+    color: rgb(240, 46, 175);
+    font-weight: bold;
+}
+
+div>ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    line-height: 1.7;
+}
+
+code {
+    background-color: rgb(172, 170, 170);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+div>ol {
+    padding-left: 40px;
+    line-height: 1.3;
+    list-style-type: decimal;
+    padding-bottom: 20px;
+}
+
+table {
+    text-align: center;
+    margin: 0 auto 40px auto;
+    line-height: 3;
+}
+
+table caption {
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    height: 50px
+}
+
+th {
+    color: white;
+    background-color: rgb(77, 77, 255);
+    border-right: 1px solid rgb(255, 255, 255);
+    padding: 10px 15px
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #3f6bca;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(207, 207, 207);
+    border-top: 1px solid rgba(163, 163, 163, 0.589);
+    border-bottom: 1px solid rgba(163, 163, 163, 0.589);
+}
+
+#video {
+    text-align: center;
+    margin: 15px auto 30px auto;
+}
+
+a {
+    color: rgb(0, 162, 255);
+}
+
+iframe {
+    border-radius: 22px;
+    width: 100%;
+}
+
+.grigio {
+    background-color: rgba(192, 192, 192, 0.664);
+    text-align: center;
+    padding-bottom: 19px;
+    padding-top: 19px;
+}
+
+.grigio h4 {
+    font-weight: bold;
+    font-size: 34px
+}
+
+.grigio p {
+    padding-top: 40px;
+    padding-bottom: 35px;
+    text-align: left;
+}
+
+input {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px dashed #333;
+}
+
+button {
+    padding: 4px 7px;
+    background-color: #3f6bca;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
+
+h5 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    padding: 30px
+}
+
+.grigio2 {
+    background-color: rgba(192, 192, 192, 0.664);
+    text-align: left;
+    margin-top: 15px;
+    padding-bottom: 19px;
+    padding-top: 19px;
+    padding-left: 20px;
+    border: 1px dotted grey;
+}
+.date{
+    text-align: right;
+    padding-bottom: 5px;
+}
+
+#footer{
+   margin-top:25px;
+    background: linear-gradient(0deg, rgba(53,53,53,1) 0%, rgba(5,85,103,1) 68%);
+    text-align: center;
+    padding:5px 10px 35px 10px;
+    color:white;
+}
+footer a{
+    color: rgb(240, 46, 175);
+}

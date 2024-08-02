@@ -1,0 +1,15 @@
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\bin\Debug\net8.0\es2.exe
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\bin\Debug\net8.0\es2.deps.json
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\bin\Debug\net8.0\es2.runtimeconfig.json
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\bin\Debug\net8.0\es2.dll
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\bin\Debug\net8.0\es2.pdb
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\obj\Debug\net8.0\es2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\obj\Debug\net8.0\es2.AssemblyInfoInputs.cache
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\obj\Debug\net8.0\es2.AssemblyInfo.cs
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\obj\Debug\net8.0\es2.csproj.CoreCompileInputs.cache
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\obj\Debug\net8.0\es2.sourcelink.json
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\obj\Debug\net8.0\es2.dll
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\obj\Debug\net8.0\refint\es2.dll
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\obj\Debug\net8.0\es2.pdb
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\obj\Debug\net8.0\es2.genruntimeconfig.cache
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\es2\obj\Debug\net8.0\ref\es2.dll

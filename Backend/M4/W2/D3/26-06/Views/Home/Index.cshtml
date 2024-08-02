@@ -1,0 +1,52 @@
+﻿@model _26_06.Models.IndexViewModel
+
+@{
+    ViewData["Title"] = "Nuovo Biglietto";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Prenota">
+    <div class="form-group">
+        <label asp-for="Persona.Nome" class="control-label">Nome</label>
+        <input asp-for="Persona.Nome" class="form-control" />
+        <span asp-validation-for="Persona.Nome" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Persona.Cognome" class="control-label">Cognome</label>
+        <input asp-for="Persona.Cognome" class="form-control" />
+        <span asp-validation-for="Persona.Cognome" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Biglietto.Tipo" class="control-label">Tipo di Biglietto</label><br />
+        <label>
+            <input type="radio" asp-for="Biglietto.Tipo" value="Normale" /> Normale
+        </label>
+        <label>
+            <input type="radio" asp-for="Biglietto.Tipo" value="Ridotto" /> Ridotto
+        </label>
+        <span asp-validation-for="Biglietto.Tipo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Biglietto.Sala.NomeSala" class="control-label">Sala Assegnata</label><br />
+        <select asp-for="Biglietto.Sala.NomeSala" class="form-control">
+            @foreach (var sala in Model.Sale)
+            {
+                <option value="@sala.NomeSala">@sala.NomeSala</option>
+            }
+        </select>
+        <span asp-validation-for="Biglietto.Sala.NomeSala" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salva</button>
+</form>
+
+<h2>Riepilogo Sale</h2>
+<ul>
+    @foreach (var sala in Model.Sale)
+    {
+        <li>
+            @sala.NomeSala - Posti Occupati: @sala.PostiOccupati / @sala.PostiTotali (Ridotti: @sala.PostiRidotti)
+        </li>
+    }
+</ul>

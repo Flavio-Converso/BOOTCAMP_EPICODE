@@ -1,0 +1,43 @@
+﻿@using Console25_06
+@{
+    ViewData["Title"] = "ESERCIZIO 25-06";
+}
+
+@model CV 
+
+
+<h1>Curriculum Vitae</h1>
+
+<h2>Informazioni Personali</h2>
+<p><strong>Nome:</strong> @Model.InformazioniPersonali.Nome</p>
+<p><strong>Cognome:</strong> @Model.InformazioniPersonali.Cognome</p>
+<p><strong>Telefono:</strong> @Model.InformazioniPersonali.Telefono</p>
+<p><strong>Email:</strong> @Model.InformazioniPersonali.Email</p>
+
+<h2>Studi Effettuati</h2>
+@foreach (var studi in Model.StudiEffettuati)
+{
+    <p><strong>Qualifica:</strong> @studi.Qualifica</p>
+    <p><strong>Istituto:</strong> @studi.Istituto</p>
+    <p><strong>Tipo:</strong> @studi.Tipo</p>
+    <p><strong>Dal:</strong> @studi.Dal.ToShortDateString() <strong>Al:</strong> @studi.Al.ToShortDateString()</p>
+    <hr />
+}
+
+<h2>Impieghi</h2>
+@foreach (var impiego in Model.Impieghi)
+{
+    var esperienza = impiego.Esperienze;
+    <p><strong>Azienda:</strong> @esperienza.Azienda</p>
+    <p><strong>Job Title:</strong> @esperienza.JobTitle</p>
+    <p><strong>Dal:</strong> @esperienza.Dal.ToShortDateString() <strong>Al:</strong> @esperienza.Al.ToShortDateString()</p>
+    <p><strong>Descrizione:</strong> @esperienza.Descrizione</p>
+    <p><strong>Compiti:</strong></p>
+    <ul>
+        @foreach (var compito in esperienza.Compiti)
+        {
+            <li>@compito</li>
+        }
+    </ul>
+    <hr />
+}

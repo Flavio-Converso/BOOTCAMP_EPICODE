@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Project.Models.Prenotazione>
+
+@{
+    ViewData["Title"] = "Visualizza Prenotazioni";
+}
+
+<h2>@ViewData["Title"]</h2>
+<div class="table-container">
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>DataPrenotazione</th>
+            <th>NumProgressivo</th>
+            <th>Anno</th>
+            <th>SoggiornoDal</th>
+            <th>SoggiornoAl</th>
+            <th>Tariffa</th>
+            <th>Caparra</th>
+            <th>TipoPensione</th>
+            <th>IdPersona</th>
+            <th>IdCamera</th>
+            <th>Actions</th>
+            <th>Checkout</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var prenotazione in Model)
+        {
+            <tr>
+                <td>@prenotazione.IdPrenotazione</td>
+                <td>@prenotazione.DataPrenotazione.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                <td>@prenotazione.NumProgressivo</td>
+                <td>@prenotazione.Anno</td>
+                <td>@prenotazione.SoggiornoDal.ToString("yyyy-MM-dd")</td>
+                <td>@prenotazione.SoggiornoAl.ToString("yyyy-MM-dd")</td>
+                <td>@prenotazione.Tariffa.ToString("C")</td>
+                <td>@prenotazione.Caparra.ToString("C")</td>
+                <td>@prenotazione.TipoPensione</td>
+                <td>@prenotazione.IdPersona</td>
+                <td>@prenotazione.IdCamera</td>
+
+                <td>
+                        <a asp-controller="ManagementServiziAgg" asp-action="AddServizioAgg" asp-route-idPrenotazione="@prenotazione.IdPrenotazione" class="btn btnPren btn-primary">Aggiungi servizi aggiuntivi</a>
+                </td>
+                <td>
+                        <a class="btn btnPren btn-primary" asp-controller="Checkout" asp-action="Checkout" asp-route-idPrenotazione="@prenotazione.IdPrenotazione">Vai al checkout</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
+
+<a asp-controller="Home" asp-action="Management" class="btn btn-secondary">Indietro</a>

@@ -1,0 +1,2 @@
+﻿SELECT AVG(Eta) AS EtaAVG
+FROM Impiegato

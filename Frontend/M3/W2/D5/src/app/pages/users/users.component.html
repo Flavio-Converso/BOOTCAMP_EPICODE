@@ -1,0 +1,14 @@
+<h1 class="text-white">Users and todos:</h1>
+<input type="text" class="form-control" placeholder="Search: (CASE SENSITIVE)" [(ngModel)]="valueToSearch"
+  (input)="searchUsers(valueToSearch)">
+<div class="container mt-3 bg-white d-flex justify-content-around" *ngFor="let item of userToTodos">
+  <div>
+    <img [src]="item.image" alt="img profilo">
+    <span class="d-flex ps-2 fw-bold fs-5 text-white"> {{item.firstName}} {{item.lastName}} - {{item.title}}</span>
+  </div>
+  <ul class="d-flex flex-column justify-content-center align-items-center pt-5 fs-2">
+    <li *ngFor="let todo of item.todos" [ngClass]="{'text-success': todo.completed, 'text-danger':!todo.completed}">
+      {{todo.todo}}
+    </li>
+  </ul>
+</div>

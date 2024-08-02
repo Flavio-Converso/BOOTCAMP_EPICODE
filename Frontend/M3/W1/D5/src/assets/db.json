@@ -1,0 +1,56 @@
+[
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://download.logo.wine/logo/Fiat_Automobiles/Fiat_Automobiles-Logo.wine.png",
+        "model": "500L",
+        "modelImage": "https://www.federmetano.it/wp-content/uploads/2018/03/fiat-500L.jpg",
+        "year": 2015,
+        "price": 7500,
+        "available": false
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://download.logo.wine/logo/Fiat_Automobiles/Fiat_Automobiles-Logo.wine.png",
+        "model": "500 Abarth",
+        "modelImage": "https://www.federmetano.it/wp-content/uploads/2018/03/Fiat-500S.jpg",
+        "year": 2010,
+        "price": 3500,
+        "available": true
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://seeklogo.com/images/F/ford-logo-4EA9A8C58A-seeklogo.com.png",
+        "model": "Taurus",
+        "modelImage": "https://www.motortrend.com/uploads/sites/10/2015/11/2014-ford-taurus-limited-fwd-sedan-angular-front.png",
+        "year": 2009,
+        "price": 5200,
+        "available": false
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://seeklogo.com/images/F/ford-logo-4EA9A8C58A-seeklogo.com.png",
+        "model": "Focus",
+        "modelImage": "https://www.gpas-cache.ford.com/guid/3c3e2039-651c-396c-9d4a-9341fa79386b.png",
+        "year": 2014,
+        "price": 9700,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://media.designrush.com/inspirations/129347/conversions/_1513705854_938_audi2-preview_mobile.jpg",
+        "model": "A3",
+        "modelImage": "https://immagini.alvolante.it/sites/default/files/styles/image_gallery_big/public/serie_auto_galleria/2024/03/audi_a3_allstreet_ant.png?itok=-L7t12Ll",
+        "year": 2012,
+        "price": 4300,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://media.designrush.com/inspirations/129347/conversions/_1513705854_938_audi2-preview_mobile.jpg",
+        "model": "Q7",
+        "modelImage": "https://mediaservice.audi.com/media/cdb/data/b2184b36-99c7-4c3b-9351-a45c61533af1.jpg",
+        "year": 2020,
+        "price": 41700,
+        "available": false
+    }
+]

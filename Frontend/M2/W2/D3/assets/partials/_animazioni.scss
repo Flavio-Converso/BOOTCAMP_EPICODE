@@ -1,0 +1,30 @@
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+  position: relative;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInAnimationImg {
+  from {
+    top: -100px; /* Parte da 50px sopra il contenitore */
+    opacity: 0;
+  }
+  to {
+    top: 30px; /* Finisce allineata al bordo superiore del contenitore */
+    opacity: 1;
+  }
+}
+.fade-inImg {
+  opacity: 0;
+  animation: fadeInAnimationImg 1.5s ease-in forwards;
+  position: relative;
+}

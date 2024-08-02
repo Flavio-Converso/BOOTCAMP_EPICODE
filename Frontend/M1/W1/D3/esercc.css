@@ -1,0 +1,104 @@
+#contenitore {
+    border: 1px none #000;
+    margin: 0 auto;
+    text-align: center;          /* contenitore totale*/
+    padding: 0 560px 0 560px;
+}
+
+#paside {                               /* scritta sotto logo*/
+    color: #187B7B;
+}
+
+#paside span {                  /* parte in grassetto sotto logo*/
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#saside {                    /* scritta sotto foto */
+    color: orangered;
+    font-size: 1.3em;
+    text-align: left;
+    text-indent: 21%;
+    margin-bottom: 3.5em;
+}
+
+#saside a {                  /* link colore diverso sotto foto*/
+    color: #187B7B;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+figure {           /* immagine focaccia*/
+    text-align: center;
+    width: auto;
+}
+#img_focaccia{       /* bordi arrotondati*/
+    border-radius: 25px;
+}
+
+figcaption {         /* scritta grigia autore*/
+    font-size: 1.2em;
+    color: grey;
+}
+
+#divisorio {           /* linea di divisione*/
+    width: 100%;
+    height: 0.05em;
+    background-color: #FFD877;
+}
+
+h1 {                          /* titolo in cima grassetto */
+    font-size: 3.5em;
+    margin-top: 1.5em;
+    text-align: center;
+    font-family: "Cookie", cursive;
+}
+
+h2 {                     /* scritta sotto titolo*/
+    font-weight: normal;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Cookie", cursive;
+}
+
+.divisorio_secondo {        /* linea di divisione*/
+    width: 100%;
+    height: 0.05em;
+    background-color: #187B7B;
+}
+
+.intest_lista {                    /*titolo lista */
+    font-weight: bold;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    text-align: left;
+}
+
+ul {                     /* elementi lista*/
+    text-align: left;
+    font-size: 1.4em;
+
+}
+
+.titolo_spiegazione {           /* INGREDIENTS sopra lista e METHOD  in fondo*/
+    text-align: left; 
+    font-size: 2em;
+    font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+h4 {                      /* ultimo titolino col numero */
+    text-align: left;
+    font-size: 1.5em;
+    text-indent: 5%;
+}
+#chiusura{              /* ultimo paragrafo */
+    font-size: 1.3em;
+    text-align: left;
+}
+footer{                         /* footer*/
+    text-align: left;
+    font-size: 1.3em;
+}
+footer a {
+    color:#187B7B;
+}

@@ -1,0 +1,98 @@
+﻿/////////////////////////////////////////////////////////////////////////////
+La applicazione concede l’ACCESSO solo ai DIPENDENTI dell’hotel per mezzo di:
+-Username,
+-Password.
+
+
+//////////////////////////////
+I CLIENTI sono individuati da: 
+-Nome, 
+-Cognome, 
+-CF, 
+-Email, 
+-Telefono,
+-Cellulare. 
+-Città, 
+-Provincia, 
+/////////////////////////////
+Ogni CAMERA è individuata da:
+-NumeroCamera, 
+-Descrizione,
+-Tipologia (singola, doppia).
+
+
+/////////////////////////////////////////////////////////////////////////
+La PRENOTAZIONE effettuata da un cliente si riferisce ad una sola camera. 
+Per ogni prenotazione si deve memorizzare:
+-DataPrenotazione, 
+-NumProgressivo,
+-Anno, 
+-SoggiornoDal,
+-SoggiornoAl,
+-Caparra,
+-Tariffa,
+-Pensione(mezza pensione / pensione completa / pernottamento con prima colazione).
+
+
+//////////////////////////////////////////////////////////////////
+Durante il soggiorno, possono essere richiesti SERVIZI AGGIUNTIVI:
+-Colazione in camera, 
+-Mini bar, 
+-Internet, 
+-Letto aggiuntivo, 
+-Culla. 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+Questi servizi dovranno di volta in volta essere caricati a sistema e relazionati alla prenotazione. 
+Per ogni SERVIZIOAGG è memorizzata:
+-Data, 
+-Quantità,
+-Prezzo.
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+All’atto del checkout, il concierge della reception, deve poter stampare l’intero dettaglio della prenotazione:
+-Il numero di stanza, il periodo, la tariffa applicata
+-La lista di tutti i servizi aggiuntivi richiesti durante il soggiorno,
+-L’importo da saldare (tariffa – caparra + somma di tutti i servizi aggiuntivi).
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+La applicazione per mezzo di una pagina che consente interrogazioni asincrone a sistema, deve poter:
+-Ricercare le prenotazioni effettuate da un cliente in base al CODICE FISCALE,
+-Ricercare il numero totale di prenotazioni per i soggiorni di tipo “PENSIONE COMPLETA”.
+
+/////
+TODO:
+//////////USARE -> ANTIFORGERYTOKEN (slide 22/07)//////////	     da controllare ovunque (fino al 23-07 FATTO)
+todo 23/07:
+-riempimento tabella camere / altri dati di prova				@@@@@@@@@FATTO@@@@@@@@@ 
+-riempimento tabella utenti (1 solo user è sufficiente)			@@@@@@@@@FATTO@@@@@@@@@
+-registrazione / login						@@@@@@@@@FATTO@@@@@@@@@ //gestione errori da fare//
+-form creazione cliente (authorize)			@@@@@@@@@FATTO@@@@@@@@@ //rivedere gestione form nel model e nella vista//
+-form creazione persone (authorize)			@@@@@@@@@FATTO@@@@@@@@@ //rivedere gestione form nel model e nella vista//
+-form creazione prenotazione (authorize)	@@@@@@@@@FATTO@@@@@@@@@ //rivedere gestione form nel model e nella vista//
+
+todo 24/07:
+-form ricerca per CF (authorize) (ASYNC)	@@@@@@@@@FATTO@@@@@@@@@ 
+-form ricerca per tipo di soggiorno "pensione completa" (authorize) (ASYNC)  @@@@@@@@@FATTO@@@@@@@@@ 
+-styling footer								@@@@@@@@@FATTO@@@@@@@@@ 
+-styling pagina registrazione/login         @@@@@@@@@FATTO@@@@@@@@@ 
+
+todo 25/07:
+-form aggiunta serviziAgg alla prenotazione esistente (authorize) @@@@@@@@@FATTO@@@@@@@@@ 
+-styling pagina home  @@@@@@@@@FATTO@@@@@@@@@ 
+-styling pagina routing ("Management")  @@@@@@@@@FATTO@@@@@@@@@ 
+-styling pagina creazioni @@@@@@@@@FATTO@@@@@@@@@ 
+-styling navbar  @@@@@@@@@FATTO@@@@@@@@@ 
+
+
+todo 26/07:
+-sistema di checkout / stampa dettagli prenotazione (authorize)  @@@@@@@@@FATTO@@@@@@@@@ 
+-immagine logo navbar
+-immagine logo footer
+-placeholder nel footer
+-fix vari(?)
+
+
+todo extra: 
+-cryptaggio password												    @@@@@@@@@FATTO@@@@@@@@@ 

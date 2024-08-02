@@ -1,0 +1,264 @@
+html,
+body,
+div,
+form,
+fieldset,
+legend,
+label {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+td,
+caption {
+  font-weight: normal;
+}
+
+img {
+  border: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease-in forwards;
+  position: relative;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInAnimationImg {
+  from {
+    top: -100px; /* Parte da 50px sopra il contenitore */
+    opacity: 0;
+  }
+  to {
+    top: 30px; /* Finisce allineata al bordo superiore del contenitore */
+    opacity: 1;
+  }
+}
+.fade-inImg {
+  opacity: 0;
+  animation: fadeInAnimationImg 1.5s ease-in forwards;
+  position: relative;
+}
+
+.font-sm {
+  font-size: 1rem;
+}
+
+.font-md {
+  font-size: 1.5rem;
+}
+
+.font-lg {
+  font-size: 2rem;
+}
+
+.font-xl {
+  font-size: 2.5rem;
+}
+
+.btn-blu {
+  background-color: #0e6cff;
+}
+
+.btn-giallo {
+  background-color: #ff8700;
+}
+
+.btn-verde {
+  background-color: #4caf50;
+}
+
+button {
+  cursor: pointer;
+  border: 3px solid rgb(253, 143, 143);
+}
+
+.padding-block-sm {
+  padding-block: 4px;
+}
+
+.padding-inline-sm {
+  padding-inline: 4px;
+}
+
+.padding-block-normal {
+  padding-block: 8px;
+}
+
+.padding-inline-normal {
+  padding-inline: 8px;
+}
+
+.padding-block-md {
+  padding-block: 12px;
+}
+
+.padding-inline-md {
+  padding-inline: 12px;
+}
+
+.padding-block-lg {
+  padding-block: 16px;
+}
+
+.padding-inline-lg {
+  padding-inline: 16px;
+}
+
+.padding-block-xl {
+  padding-block: 24px;
+}
+
+.padding-inline-xl {
+  padding-inline: 24px;
+}
+
+.padding-block-xxl {
+  padding-block: 32px;
+}
+
+.padding-inline-xxl {
+  padding-inline: 32px;
+}
+
+.margin-block-sm {
+  margin-block: 4px;
+}
+
+.margin-inline-sm {
+  margin-inline: 4px;
+}
+
+.margin-block-normal {
+  margin-block: 8px;
+}
+
+.margin-inline-normal {
+  margin-inline: 8px;
+}
+
+.margin-block-md {
+  margin-block: 12px;
+}
+
+.margin-inline-md {
+  margin-inline: 12px;
+}
+
+.margin-block-lg {
+  margin-block: 16px;
+}
+
+.margin-inline-lg {
+  margin-inline: 16px;
+}
+
+.margin-block-xl {
+  margin-block: 24px;
+}
+
+.margin-inline-xl {
+  margin-inline: 24px;
+}
+
+.margin-block-xxl {
+  margin-block: 32px;
+}
+
+.margin-inline-xxl {
+  margin-inline: 32px;
+}
+
+#logo {
+  border-radius: 20px;
+  width: 7%;
+}
+
+.bg-hero {
+  background-color: #640fc5;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li :hover {
+  color: aqua;
+}
+
+nav a {
+  color: #f4f4f4;
+}
+
+.floating {
+  border-radius: 40px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgb(17, 0, 255);
+}
+
+h1 {
+  color: #f4f4f4;
+  font-weight: 700;
+}
+
+h3 {
+  width: 53%;
+}
+
+header {
+  color: #f4f4f4;
+}
+
+button {
+  width: 100%;
+  height: 50px;
+}
+button:active {
+  border: 3px solid green;
+}
+
+#img-header {
+  width: 40%;
+}
+
+#grid {
+  flex-wrap: wrap;
+}/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,15 @@
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\obj\Debug\net8.0\19-06.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\obj\Debug\net8.0\19-06.AssemblyInfoInputs.cache
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\obj\Debug\net8.0\19-06.AssemblyInfo.cs
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\obj\Debug\net8.0\19-06.csproj.CoreCompileInputs.cache
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\obj\Debug\net8.0\19-06.sourcelink.json
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\bin\Debug\net8.0\19-06.exe
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\bin\Debug\net8.0\19-06.deps.json
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\bin\Debug\net8.0\19-06.runtimeconfig.json
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\bin\Debug\net8.0\19-06.dll
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\bin\Debug\net8.0\19-06.pdb
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\obj\Debug\net8.0\19-06.dll
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\obj\Debug\net8.0\refint\19-06.dll
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\obj\Debug\net8.0\19-06.pdb
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\obj\Debug\net8.0\19-06.genruntimeconfig.cache
+C:\Users\sirar\Documents\epicode\4meseBE\esercizi\primaSettimana\19-06\obj\Debug\net8.0\ref\19-06.dll

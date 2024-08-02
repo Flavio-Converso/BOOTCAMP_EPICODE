@@ -1,0 +1,24 @@
+<h1 class="text-center">Tutti i post </h1>
+<div class="card my-2" *ngFor="let post of posts; let i = index" [ngClass]="{
+    'border border-5 border-primary ': post.active,
+  }">
+    <div class="card-header">
+        {{ post.tags.join(", ") }}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p class="card-text">{{ post.body }}</p>
+        <a [routerLink]="['/post',post.id]" class="btn btn-primary">Dettagli</a>
+    </div>
+    <div class="btn btn-success">Modifica</div>
+    <div id="modifica" class="container">
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <input type="text" class="form-control" name="titolo" placeholder="Titolo"
+                        [(ngModel)]="posts[i].title">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - _28_06</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/_28_06.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            
+                <span class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <a asp-controller="Home" asp-action="Index">
+            <img src="~/immagini/logo.jpg" class="bi me-2" width="120" height="80"></img>
+                    <span class="fs-1 text-dark">Shoe Shop</span>
+                </a>
+        </span> 
+        <ul class="nav nav-pills">
+                <li class="nav-item ms-5 me-2 "><a class="nav-link text-white bg-opacity-75 bg-primary" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+        </ul>
+        </header>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item "><a href="#" class="nav-link px-2  text-white">Home</a></li>
+            <li class="nav-item "><a href="#" class="nav-link px-2  text-white">Features</a></li>
+            <li class="nav-item "><a href="#" class="nav-link px-2  text-white">Pricing</a></li>
+            <li class="nav-item "><a href="#" class="nav-link px-2  text-white">FAQs</a></li>
+            <li class="nav-item "><a href="#" class="nav-link px-2  text-white">About</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© Shoe Shop Inc</p>
+    </footer>
+
+
+  
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

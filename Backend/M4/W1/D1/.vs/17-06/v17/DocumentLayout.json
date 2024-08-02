@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Veicolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Veicolo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Animale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Animale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Dipendente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Dipendente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Atleta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Veicolo.cs",
+              "DocumentMoniker": "C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Veicolo.cs",
+              "RelativeDocumentMoniker": "Veicolo.cs",
+              "ToolTip": "C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Veicolo.cs",
+              "RelativeToolTip": "Veicolo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T13:30:56.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Animale.cs",
+              "DocumentMoniker": "C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Animale.cs",
+              "RelativeDocumentMoniker": "Animale.cs",
+              "ToolTip": "C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Animale.cs",
+              "RelativeToolTip": "Animale.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T13:26:55.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dipendente.cs",
+              "DocumentMoniker": "C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Dipendente.cs",
+              "RelativeDocumentMoniker": "Dipendente.cs",
+              "ToolTip": "C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Dipendente.cs",
+              "RelativeToolTip": "Dipendente.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T13:24:36.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Atleta.cs",
+              "DocumentMoniker": "C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Atleta.cs",
+              "RelativeDocumentMoniker": "Atleta.cs",
+              "ToolTip": "C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Atleta.cs",
+              "RelativeToolTip": "Atleta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T12:59:56.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\sirar\\Documents\\epicode\\4meseBE\\esercizi\\primaSettimana\\17-06\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-17T12:57:09.655Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

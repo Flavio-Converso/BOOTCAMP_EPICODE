@@ -1,0 +1,136 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    background-image:url(./assets/img/sfondo.png);
+    background-repeat: repeat;
+}
+.blocco {
+    width: 670px;
+    text-align: center;
+    margin: 40px auto 0px auto;
+}
+header div {
+    background: linear-gradient(160deg, rgb(2, 162, 206) 50%, rgb(2, 116, 151) 100%);
+}
+#logo {
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+nav {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+nav, h1 {
+    font-weight: bold;
+    font-size: 33px;
+    color: white;
+}
+.menu {
+    margin-top: 8px
+}
+/*fine primo blocco*/
+/*inizio secondo blocco*/
+.bordo {
+    text-align: left;
+    padding: 40px 0 40px 25px;
+    background:white;
+    box-shadow: 0 0 25px rgb(151, 149, 149);
+}
+h2 {
+    font-weight: bold;
+    font-size: 45px;
+    padding: 30px 0 30px 0
+}
+#autore {
+    color: rgb(168, 164, 164);
+    padding-bottom: 30px;
+}
+p {
+    padding: 10px 0
+}
+.viola {
+    color: #A7226A;
+    font-weight: bold;
+}
+.lista {
+    list-style: disc;
+    padding: 0 0 15px 15px;
+    line-height: 33px;
+}
+code {
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background-color: rgb(211, 211, 211);
+}
+ol {
+    list-style-type: decimal;
+    padding: 25px 0 45px 30px;
+    line-height: 30px;
+}
+
+/*tabella*/
+table{
+    font-weight: bold;
+    font-style: italic;
+    margin:30px 10% 5px 10%
+}
+table th{
+background-color: #3966C7;
+height: 60px;
+line-height: 60px;
+width:150px;
+text-align: center;
+border-right: 1px solid #fff;
+color: white;
+font-weight: normal;
+font-style: normal;
+}
+
+table td {
+    font-weight: normal;
+}
+tr:nth-child(2), tr:nth-child(4){
+    background-color: rgb(214, 214, 214);
+    border-top: 1px solid rgb(170, 170, 170);
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+tbody{
+    border-bottom: 2.7px solid blue;
+}
+#pre_video{
+    padding-top:50px;
+    padding-bottom:15px;
+}
+.piulink{
+    color:#00A3C2
+}
+video{
+    width:400px;
+    display: block;
+    margin:0 auto;
+    border-radius: 10px;
+}
+.box_grigio{
+    text-align: center;
+    margin:70px auto 20px auto;
+    background-color: #E4E2E4;
+}
+.box_grigio h3{
+    padding:40px;
+}
+#input1{
+   margin:10px;
+   border-bottom: 0.3px dotted black;
+   height: 30px;
+   
+}
+#input2{
+    background-color:#406DCA;
+    color: white;
+    width:100px;
+    height: 30px;
+    
+}

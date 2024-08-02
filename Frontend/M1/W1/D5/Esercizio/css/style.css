@@ -1,0 +1,142 @@
+
+
+body {
+    width: 0 auto;
+    text-align: center;
+    line-height: 1.65;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    color: #393d41;
+    
+}
+
+/*HEADING CON LOGO INIZIO*/
+#banner {
+    background-color: black;
+    padding: 25px;
+}
+
+#banner img {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+/*HEADING CON LOGO FINE*/
+h1 {
+    color: #25a2c3;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 3rem;
+    padding-top:10px;
+}
+
+#secondo_blocco { /*immagine sfondo grigia*/
+    background-image: url(../images/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+}
+
+#paragrafo1 {
+    margin: 0px auto 35px auto;
+}
+
+#box_arancio {
+    /*pulsante iniziamo*/
+    background-color: #f04c2f;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 45%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px auto;
+    text-decoration: none;
+}
+
+/*FINE SECONDO BLOCCO*/
+.azzurro {
+    color: #25a2c3;
+    margin-top: 25px;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 10px
+}
+
+#img_tonda {
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+article > div{
+    margin-bottom: 50px;
+}
+
+#blocco_arancio {
+    background-color: #e22d0e;
+    padding: 10px 10px 40px 10px;
+}
+
+.contattaci {
+    font-size: 2.2rem;
+    color: white;
+    font-weight: bold;
+}
+
+blockquote {
+    color: white;
+    margin-top: 35px;
+    font-style: italic;
+}
+
+blockquote p {
+    margin-top: 35px;
+    font-style: normal;
+}
+
+#qblocco {
+    margin-bottom: 100px;
+    margin:10px 6vw;
+    
+}
+
+.img123 {
+    width: 100%;
+    max-width: 600px;
+}
+
+.bordoscheda {
+    border: 1px solid #c7c9c9;
+    margin:65px auto; 
+    max-width: 600px;
+}
+
+footer {
+    background-color: #25a2c3;
+    padding-bottom: 15px;
+    padding-top: 35px;
+    color: white;
+}
+
+footer a {
+    color: #c8e7f0;
+}
+
+#copyright {
+    
+    margin: 50px;
+    margin-bottom:50px;
+    padding-top: 15px;
+}
+#lineabianca{
+    border: 1px solid white;
+    margin: 0 auto;
+    width: 25vh;
+    margin-top: 35px ;
+}

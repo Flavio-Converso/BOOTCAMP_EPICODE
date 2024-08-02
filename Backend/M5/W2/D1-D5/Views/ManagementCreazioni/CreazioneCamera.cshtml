@@ -1,0 +1,43 @@
+﻿@model Project.Models.Camera
+<link rel="stylesheet" href="~/css/creazioni.css" />
+@{
+    ViewData["Title"] = "Gestisci Camera";
+}
+
+<h2>@ViewData["Title"]</h2>
+<div class="container">
+<form asp-action="CreazioneCamera" method="post">
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        <label asp-for="NumeroCamera" class="control-label">Numero di camera</label>
+        <input asp-for="NumeroCamera" class="form-control" />
+        <span asp-validation-for="NumeroCamera" class="text-danger fw-bold"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Descrizione" class="control-label"></label>
+        <input asp-for="Descrizione" class="form-control" />
+            <span asp-validation-for="Descrizione" class="text-danger fw-bold"></span>
+    </div>
+
+        <div class="form-group">
+            <label asp-for="Tipologia" class="control-label"></label>
+            <select asp-for="Tipologia" class="form-control">
+                <option value="">Scegli Tipologia</option> 
+                <option value="singola">Singola</option>
+                <option value="doppia">Doppia</option>
+            </select>
+            <span asp-validation-for="Tipologia" class="text-danger fw-bold"></span>
+        </div>
+        <div class="centerbtn">
+    <button type="submit" class="btns btn-primary">Crea</button>
+    </div>
+</form>
+</div>
+<a asp-controller="Home" asp-action="Management" class="btn btn-secondary">Indietro</a>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

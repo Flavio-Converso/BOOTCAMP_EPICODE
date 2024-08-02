@@ -1,0 +1,84 @@
+﻿@model List<BE_Project_29_07_02_08.Models.Order>
+
+@{
+    ViewData["Title"] = "Lista di Ordini";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+<button id="btnGetProcessedCount" class="btn-sm btn-primary">N. Ordini processati:</button>
+<span id="processedOrdersCount"></span>
+
+
+    <div class="mt-3">
+        <div class="form-group">
+            <label for="dateInput"> Data:</label>
+            <input type="date" id="dateInput" class="form-control">
+        </div>
+        <button id="btnGetTotalIncome" class="btn btn-primary">Tot. incassi x data</button>
+        <div id="totalIncome" class="mt-3"></div>
+    </div>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Id Ordine</th>
+            <th>Indirizzo</th>
+            <th>Note aggiuntive</th>
+            <th>Evaso (s/n)</th>
+            <th>Data ordine</th>
+            <th>Tot. incassi</th>
+            <th>Id Utente</th>
+            <th>Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.IdOrder</td>
+                <td>@order.Address</td>
+                <td>@order.AdditionalNotes</td>
+                <td>
+                    @if (order.IsProcessed)
+                    {
+                        <span class="badge bg-success">Si</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-warning text-dark">No</span>
+                    }
+                </td>
+                <td>@order.OrderDate.ToShortDateString()</td>
+                <td>@order.TotalAmount.ToString("C")</td>
+                <td>@order.IdUser</td>
+                <td>
+                    @if (!order.IsProcessed)
+                    {
+                        <form asp-action="IsProcessed" method="post">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="idOrder" value="@order.IdOrder" />
+                            <button type="submit" class="btn btn-sm btn-success">Evadi ordine</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form asp-action="IsProcessed" method="post">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="idOrder" value="@order.IdOrder" />
+                            <button class="btn btn-sm btn-warning">Segna come non evaso</button>
+                        </form>
+                    }
+                    <form asp-action="DeleteOrder"  method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="idOrder" value="@order.IdOrder" />
+                        <button type="submit" class="btn-sm btn-danger">Elimina</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

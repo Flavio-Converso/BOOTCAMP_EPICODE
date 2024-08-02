@@ -1,0 +1,62 @@
+﻿@model List<BE_Project_29_07_02_08.Models.ViewModels.CartItem>
+
+@{
+    ViewData["Title"] = "Shopping Cart";
+}
+
+<h1>Carrello</h1>
+
+@if (Model.Count == 0)
+{
+    <p>Your cart is empty.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome prodotto</th>
+                <th>Prezzo</th>
+                <th>Quantità</th>
+                <th>Subtotale</th>
+                <th>Azioni</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.Price.ToString("C")</td>
+                    <td>@item.Quantity</td>
+                    <td>@(item.Price * item.Quantity)€</td>
+                    <td>
+                        <form asp-action="RemoveFromCart" asp-controller="Cart" method="post">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="productId" value="@item.ProductId" />
+                            <button type="submit" class="btn btn-danger">Rimuovi</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td colspan="3" class="text-right"><strong>Total:</strong></td>
+                <td colspan="2">@ViewBag.TotalAmount €</td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="showCheckoutBtn" class="btn btn-primary">Checkout</button>
+    <div id="checkoutDiv" style="display: none;">
+        @Html.Partial("Checkout", Model)
+    </div>
+}
+
+
+    <script>
+        document.getElementById('showCheckoutBtn').addEventListener('click', function () {
+            var checkoutDiv = document.getElementById('checkoutDiv');
+            if (checkoutDiv.style.display === 'none') {
+                checkoutDiv.style.display = 'block';
+            } 
+        });
+    </script>

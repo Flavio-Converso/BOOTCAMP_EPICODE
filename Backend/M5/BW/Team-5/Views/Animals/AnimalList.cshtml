@@ -1,0 +1,58 @@
+﻿@model List<Team_5.Models.Clinic.Animals>
+
+@{
+    ViewData["Title"] = "Lista Animali";
+}
+<div class="row">
+    <div class="col">
+<h1 class="text-light">Lista Animali</h1>
+<hr />
+
+<table class="table table-dark-personal">
+    <thead class="personal-tr">
+        <tr class="personal-tr p-2">
+            <th scope="col">Nome</th>
+            <th scope="col">Data di Registrazione</th>
+            <th scope="col">Data di Nascita</th>
+            <th scope="col">Razza</th>
+            <th scope="col">Colore</th>
+            <th scope="col">N.Microchip</th>
+            <th scope="col">ID Padrone</th>
+            <th scope="col">Immagine</th>
+            <th scope="col">Azioni</th> 
+        </tr>
+    </thead>
+    <tbody class="p-2">
+        @foreach (var animal in Model)
+        {
+            <tr>
+                <td>@animal.Name</td>
+                <td>@animal.RegistrationDate.ToString("yyyy-MM-dd")</td>
+                <td>@animal.BirthDate.ToString("yyyy-MM-dd")</td>
+                <td>@animal.Breed?.Name</td>
+                <td>@animal.Color</td>
+                <td>@animal.NumMicrochip</td>
+                <td>@animal.OwnerId</td>
+                <td>
+                    @if (animal.Image != null && animal.Image.Length > 0)
+                    {
+                        <img src="data:image/png;base64,@Convert.ToBase64String(animal.Image)" alt="Animal Image" style="width: 100px; height: auto;" />
+                    }
+                    else
+                    {
+                        <span>Nessuna immagine</span>
+                    }
+                </td>
+                <td>
+                    <form asp-action="DeleteAnimal" method="post" onsubmit="return confirm('Sei sicuro di voler eliminare questo animale?');">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@animal.IdAnimal" />
+                        <button type="submit" class="btn btn-grey">Elimina</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+    </div>
+</div>

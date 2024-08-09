@@ -1,0 +1,46 @@
+﻿@model List<Team_5.Models.Pharmacy.Orders>
+
+@{
+    ViewData["Title"] = "Order List";
+}
+
+<div class="row">
+    <div class="col">
+        <h1 class="text-light">Lista ordini:</h1>
+        <hr />
+
+        <table class="table table-dark-personal">
+            <thead class="personal-tr">
+                <tr class="personal-tr">
+                    <th scope="col">Quantità</th>
+                    <th scope="col">Data dell'ordine</th>
+                    <th scope="col">Numero della ricetta</th>
+                    <th scope="col">Prodotto</th>
+                    <th scope="col">Proprietario</th>
+                    <th scope="col">Azioni</th> <!-- Colonna per il bottone Delete -->
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@order.OrderQuantity</td>
+                        <td>@order.OrderDate.ToString("yyyy-MM-dd")</td>
+                        <td>@order.PrescriptionNumber</td>
+                        <td>@order.Product?.ProductName</td>
+                        <td>@order.Owner?.Name</td>
+                        <td>
+                            <form asp-action="DeleteOrder" asp-controller="Orders" method="post" onsubmit="return confirm('Sei sicuro di voler eliminare questo ordine?');">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" name="id" value="@order.IdOrder" />
+                                <button type="submit" class="btn btn-grey">Elimina</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+    </div>
+</div>

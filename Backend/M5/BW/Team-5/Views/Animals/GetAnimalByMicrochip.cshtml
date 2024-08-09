@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Trova Animale per Microchip";
+}
+
+<h1 class="text-personal">@ViewData["Title"]</h1>
+<hr />
+
+
+<link rel="stylesheet" href="~/css/auth.css" />
+
+
+<div class="row align-items-center justify-content-center">
+    <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7">
+        <div class="bg-custom rounded p-5 my-4 mx-3">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h3 class="text-red">RICERCA PER MICROCHIP</h3>
+                <h3 class="text-light">Ricerca <i class="fa-solid fa-magnifying-glass text-red"></i></i></h3>
+            </div>
+                @Html.AntiForgeryToken()
+                <h2 class="control-label mb-1 text-light">Inserisci il numero del microchip:</h2>
+                <div class="input-group mt-4 mb-4">
+                <input type="text" id="microchip" class="form-control bg-secondary text-light" placeholder="Es. 1234567890" aria-label="Numero Microchip" />
+                </div>
+            <div id="animals" class="mt-4"></div>
+            <a asp-controller="Examination" asp-action="ExaminationsList" class="btn btn-red mt-2">Torna Alla Lista</a>
+
+
+        </div>
+    
+    </div>
+</div>

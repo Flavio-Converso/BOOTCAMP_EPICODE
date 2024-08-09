@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Team_5.Models.Clinic.Examinations>
+
+@{
+    ViewData["Title"] = "Lista delle Visite";
+}
+
+<div class="row">
+    <div class="col">
+
+<h1 class="text-light">Lista delle Visite</h1>
+        <hr />
+<table class="table table-dark-personal">
+            <thead class="personal-tr">
+                <tr class="personal-tr">
+            <th  scope="col">Data della Visita</th>
+            <th  scope="col">Nome della Visita</th>
+            <th  scope="col">Trattamento</th>
+            <th  scope="col">Animale</th>
+            <th  scope="col">Azioni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var esame in Model)
+        {
+            <tr>
+                <td>@esame.ExaminationDate.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                <td>@esame.ExaminationName</td>
+                <td>@esame.Treatment</td>
+                <td>@esame.Animal.Name</td>
+                <td>
+                    <form asp-action="DeleteExamination" asp-controller="Examination" method="post" onsubmit="return confirm('Sei sicuro di voler eliminare questo esame?');">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@esame.IdExamination" />
+                        <button type="submit" class="btn btn-grey">Elimina</button>
+                    </form>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
+</div>

@@ -1,0 +1,42 @@
+﻿@model List<Team_5.Models.Clinic.Hospitalizations>
+
+@{
+    ViewData["Title"] = "Ricoveri Attivi";
+}
+<div class="row">
+    <div class="col">
+        <h1 class="text-light">Lista Ricoveri Attivi</h1>
+        <hr />
+
+        <table class="table table-dark-personal">
+            <thead class="personal-tr">
+                <tr class="personal-tr">
+                    <th scope="col">Nome Animale</th>
+                    <th scope="col">Nome Proprietario</th>
+                    <th scope="col">Data Inizio</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var hospitalization in Model)
+                {
+                    <tr>
+                        <td>@hospitalization.Animal?.Name</td>
+                        <td>
+                            @if (hospitalization.Animal?.Owner == null)
+                            {
+                                <span>Nessun Proprietario</span>
+                            }
+                            else
+                            {
+                                <span>@hospitalization.Animal.Owner.Name @hospitalization.Animal.Owner.Surname</span>
+                            }
+                        </td>
+                        <td>@hospitalization.HospDate.ToString("yyyy-MM-dd")</td>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+    </div>
+</div>

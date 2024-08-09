@@ -1,0 +1,91 @@
+﻿@using Team_5.Models.Auth
+@model Team_5.Models.Auth.Roles
+
+@{
+    ViewData["Title"] = "ManageRoles";
+    var roles = ViewBag.Roles as List<Roles>;
+    var users = ViewBag.Users as List<Users>;
+}
+<link rel="stylesheet" href="~/css/auth.css" />
+
+<h2 class="text-light">Gestione Ruoli</h2>
+<div class="row align-items-center justify-content-center">
+    <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7">
+        <div class="bg-custom rounded p-5 my-4 mx-3">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h3 class="text-red">REGISTRAZIONE RUOLO</h3>
+                <h3 class="text-light">Creazione <i class="fa-solid fa-scroll text-red"></i></h3>
+            </div>
+            <form asp-action="CreateRole" method="post">
+                @Html.AntiForgeryToken()
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label mb-1 text-light">Inserisci nome ruolo:</label>
+                    <input asp-for="Name" class="form-control bg-secondary text-light" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <input type="submit" value="Crea" class="btn btn-red py-3 w-100 my-4 text-white" />
+            </form>
+        </div>
+    </div>
+</div>
+
+<table class="table table-dark-personal">
+    <thead class="personal-tr">
+        <tr class="personal-tr">
+            <th scope="col">
+                Username
+            </th>
+
+            <th scope="col">
+                Email
+            </th>
+            <th scope="col">
+                Ruoli
+            </th>
+            <th scope="col">
+                Aggiungi/Rimuovi Ruolo
+            </th>
+            <th scope="col">Conferma</th>
+        </tr>
+    </thead>
+    <tbody class="p-2">
+        @foreach (var u in users)
+        {
+            <tr>
+                <form asp-action="ManageRoles" method="post">
+
+                <td>
+                        @u.Username
+                </td>
+
+                <td>
+                        @u.Email
+                </td>
+                <td>
+                        @foreach (var role in u.Roles)
+                        {
+                        <li class="list-unstyled">
+                                @role.Name
+                        </li>
+                        }
+                </td>
+                <td>
+                    <select for="role" name="idRole">
+                        <option value="" disabled selected>Scegli Ruolo</option>
+                            @foreach (var r in roles)
+                            {
+                            <option value="@r.IdRole">@r.Name</option>
+                            }
+                    </select>
+                </td>
+                <input type="hidden" name="idUser" value="@u.IdUser" />
+                <td>
+                    <button type="submit" class="btn btn-red">Aggiorna Ruoli</button>
+                </td>
+                </form>
+            </tr>
+        }
+    </tbody>
+</table>
+ 
